@@ -1,8 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const SideNavbar = () => {
+    const isMenuOpen=useSelector((store) => store.navSlice.isMenuOpen)
+
+    if(!isMenuOpen) return null;
   return (
-    <div className=" px-1 shadow-lg w-1/6 mt-1 overflow-scroll">
+    <div className=" px-1 shadow-lg w-1/6 mt-1 overflow-y-scroll">
       <button className="flex pt-2 w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 px-3 rounded-lg">
         <img
           className="h-5 "
