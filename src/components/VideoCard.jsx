@@ -1,23 +1,14 @@
-import React, { useEffect } from "react";
-import { YOUTUBE_VIDEOS_API } from "../utils/constants";
+import React from "react";
 
-const VideoCard = () => {
-  useEffect(() => {
-    getVideos();
-  }, []);
-
-  const getVideos = async () => {
-    const data = await fetch(YOUTUBE_VIDEOS_API);
-    const res = await data.json();
-    console.log("res", res);
-  };
+const VideoCard = ({data}) => {
+ console.log(data[0].snippet.title);
   return (
     <div>
       <div className="h-72 w-80 m-5 bg-slate-100">
         <img
           alt="img"
           className="rounded-lg h-48 w-80"
-          src="https://lh4.googleusercontent.com/proxy/swYKuEQJl3C1vNQG3ATPISkCo-1ddbzniQ8qMExZH4vkaRB800I5aTNsmHHEmU6nMAKewsaYxRVkhH7jf9MYe_DanBZ_ks9lfgpdwi3tZ9oDxsOAVsTN95dgc-oiEUZqpg=w1152-h603-s-nd"
+          src={data[0].thumbnails.high}
         />
         <div>
           <div className="flex m-1">
@@ -27,9 +18,11 @@ const VideoCard = () => {
               alt="logo"
             />
             <div className="flex-row m-1 pl-2">
-              <div className="">Vitamins for daily need</div>
+              <div className="">
+                {data[0].snippet.channelTitle}
+                </div>
               <div className="text-slate-400 m-1 font-semibold">
-                Abhi ad Niyu
+                {data[0].snippet.description}
               </div>
               <div className="text-slate-400 m-1 font-semibold">
                 290 views · <span>8 hours ago</span>

@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchButton from './SearchButton'
 import SideNavbar from './SideNavbar'
-import VideoCard from './VideoCard'
+import VideoCardContainer from './VideoCardContaier'
 
 const Body = () => {
   return (
@@ -9,7 +9,7 @@ const Body = () => {
         <SideNavbar/>
         <div className='flex-row'>
         <SearchButton />
-        <VideoCard/>
+        <VideoCardContainer/>
         </div>
     </div>
   )
