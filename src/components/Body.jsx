@@ -1,4 +1,5 @@
 import React from 'react'
+import MaiContainer from './MaiContainer'
 import SearchButton from './SearchButton'
 import SideNavbar from './SideNavbar'
 import VideoCardContainer from './VideoCardContaier'
@@ -8,8 +9,7 @@ const Body = () => {
     <div className='flex'>
         <SideNavbar/>
         <div className='flex-row'>
-        <SearchButton />
-        <VideoCardContainer/>
+        <MaiContainer />
         </div>
     </div>
   )

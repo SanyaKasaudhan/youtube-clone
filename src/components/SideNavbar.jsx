@@ -6,10 +6,10 @@ const SideNavbar = () => {
 
     if(!isMenuOpen) return null;
   return (
-    <div className=" px-1 shadow-lg w-1/6 mt-1 overflow-y-scroll">
+    <div className=" px-1 col-span-4 shadow-lg w-1/6 mt-1">
       <button className="flex pt-2 w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/1946/1946488.png"
         ></img>
@@ -17,7 +17,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/5856/5856419.png"
         ></img>
@@ -25,7 +25,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/2989/2989849.png"
         ></img>
@@ -34,7 +34,7 @@ const SideNavbar = () => {
       <div className="border bg-black font-extrabold w-11/12 mb-4"></div>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/2989/2989835.png"
         ></img>
@@ -42,7 +42,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/2961/2961948.png"
         ></img>
@@ -50,7 +50,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/2991/2991195.png"
         ></img>
@@ -58,7 +58,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/2088/2088617.png"
         ></img>
@@ -66,7 +66,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/126/126473.png"
         ></img>
@@ -77,7 +77,7 @@ const SideNavbar = () => {
       <div className="mb-4 ml-4 font-semibold text-lg">Explore</div>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/1946/1946485.png"
         ></img>
@@ -85,7 +85,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/2662/2662503.png"
         ></img>
@@ -93,7 +93,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/461/461238.png"
         ></img>
@@ -101,14 +101,14 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/1179/1179120.png"
         ></img>
         <div className="ml-9 text-lg mb-2 pb-2">Movies</div>
       </button><button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/3197/3197658.png"
         ></img>
@@ -116,7 +116,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/4163/4163679.png"
         ></img>
@@ -124,7 +124,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/819/819590.png"
         ></img>
@@ -132,7 +132,7 @@ const SideNavbar = () => {
       </button>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
-          className="h-5 "
+          className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/2662/2662503.png"
         ></img>
