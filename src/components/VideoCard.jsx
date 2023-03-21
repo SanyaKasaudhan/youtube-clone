@@ -4,17 +4,15 @@ const VideoCard = ({ info }) => {
   const { snippet, statistics } = info;
   const { channelTitle, title, thumbnails } = snippet;
 
-  return (<>
-  <div className="h-72 w-20 m-5 col-span-10 bg-slate-100">hi</div>
-  </>
-    // <div className="h-72 w-60 m-5 bg-slate-100">
-    //   <img className="rounded-lg" alt="thumbnail" src={thumbnails.medium.url} />
-    //   <ul>
-    //     <li className="font-bold py-2">{title}</li>
-    //     <li>{channelTitle}</li>
-    //     <li>{statistics.viewCount} views</li>
-    //   </ul>
-    // </div>
+  return (
+    <div className="h-72 w-60 m-5 bg-slate-100">
+      <img className="rounded-lg" alt="thumbnail" src={thumbnails.medium.url} />
+      <ul>
+        <li className="font-bold py-2">{title}</li>
+        <li>{channelTitle}</li>
+        <li>{statistics.viewCount} views</li>
+      </ul>
+    </div>
   );
 };
 
