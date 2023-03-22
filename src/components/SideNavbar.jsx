@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const SideNavbar = () => {
     const isMenuOpen=useSelector((store) => store.navSlice.isMenuOpen)
@@ -7,6 +8,7 @@ const SideNavbar = () => {
     if(!isMenuOpen) return null;
   return (
     <div className=" px-1 col-span-4 shadow-lg w-1/6 mt-1">
+      <Link to="/">
       <button className="flex pt-2 w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 px-3 rounded-lg">
         <img
           className="h-5 w-5"
@@ -15,6 +17,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-9 text-lg mb-2 pb-2">Home</div>
       </button>
+      </Link>
       <button className="flex w-2/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
