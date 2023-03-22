@@ -5,7 +5,7 @@ const VideoCard = ({ info }) => {
   const { channelTitle, title, thumbnails } = snippet;
 
   return (
-    <div className="h-72 w-60 m-5 bg-slate-100">
+    <div className="h-72 w-56 m-5 bg-slate-100">
       <img className="rounded-lg" alt="thumbnail" src={thumbnails.medium.url} />
       <ul>
         <li className="font-bold py-2">{title}</li>
@@ -18,7 +18,7 @@ const VideoCard = ({ info }) => {
 
 export const AdVideoCard = ({ info }) => {
   return (
-    <div className="p-1 m-1 border border-red-900 ">
+    <div className="border border-red-900 ">
       <VideoCard info={info} />
     </div>
   );

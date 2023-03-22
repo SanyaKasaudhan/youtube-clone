@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 import MaiContainer from './MaiContainer'
 import SearchButton from './SearchButton'
 import SideNavbar from './SideNavbar'
@@ -9,7 +10,7 @@ const Body = () => {
     <div className='flex'>
         <SideNavbar/>
         <div className='flex-row'>
-        <MaiContainer />
+        <Outlet />
         </div>
     </div>
   )
