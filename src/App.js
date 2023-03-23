@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import MaiContainer from "./components/MaiContainer";
 import WatchVideo from "./components/WatchVideo";
+import Comment from "./components/Comment";
 const appRouter = createBrowserRouter([
   {
     path: "/",

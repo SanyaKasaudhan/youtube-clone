@@ -25,9 +25,9 @@ export const Navbar = () => {
         ></img>
         </a>
       </div>
-      <div className="flex col-span-10 m-2">
+      <div className="flex col-span-10 m-2 ml-60">
         <input
-          className="border-neutral-500 border-2 rounded-l-full pl-5 w-1/2"
+          className="border-neutral-500 border-2 rounded-l-full pl-5 w-96"
           type="search"
           placeholder="Search"
         ></input>
