@@ -5,10 +5,10 @@ const VideoCard = ({ info }) => {
   const { channelTitle, title, thumbnails } = snippet;
 
   return (
-    <div className="h-72 w-60 m-3 p-2 bg-slate-100">
+    <div className="h-72 w-72 m-3 p-2 bg-slate-100 rounded-lg">
       <img className="rounded-lg" alt="thumbnail" src={thumbnails.medium.url} />
       <ul>
-        <li className="font-bold py-2">{title}</li>
+        <li className="font-bold py-2">{title.split(' ').slice(0,10).join(" ")}</li>
         <li>{channelTitle}</li>
         <li>{statistics.viewCount} views</li>
       </ul>
