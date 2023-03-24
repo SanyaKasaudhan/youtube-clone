@@ -16,7 +16,7 @@ const SearchButton = () => {
       <span className="sr-only">Next</span>
     </a>
            { searchText.map((e,index)=>{
-                return <><button key={index} className='bg-gray-300 p-3 m-2 rounded-lg'>{e}</button></>
+                return <button key={index} className='bg-gray-300 p-3 m-2 rounded-lg'>{e}</button>
             })
             }
         </div>
