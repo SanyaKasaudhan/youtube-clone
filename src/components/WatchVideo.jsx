@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import { closeMenu } from "../utils/sidebarSlice";
 import Comment from "./Comment";
+import Subscribe from "./Subscribe";
 
 const WatchVideo = () => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ const WatchVideo = () => {
             allowFullScreen
           ></iframe>
    </div>
-   
+   <Subscribe />
    <Comment />
    
    </>;
