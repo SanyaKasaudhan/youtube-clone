@@ -1,7 +1,7 @@
-import { YOUTUBE_VIDEOS_API } from "./constants";
+import { YOUTUBE_PLAYLIST_API, YOUTUBE_VIDEOS_API } from "./constants";
 import { useState, useEffect } from "react";
 
-const useVideoList = ()=>{
+const usePlayList = ()=>{
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
@@ -9,12 +9,12 @@ const useVideoList = ()=>{
     }, []);
   
     const getVideos = async () => {
-      const data = await fetch(YOUTUBE_VIDEOS_API);
+      const data = await fetch(YOUTUBE_PLAYLIST_API);
       const json = await data.json();
       setVideos(json.items);
-      console.log("video",json.items)
+      console.log("playList",json.items)
     };
     return videos;
 }
 
-export default useVideoList;
+export default usePlayList;

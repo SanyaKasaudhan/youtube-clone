@@ -13,7 +13,10 @@ const WatchVideo = () => {
 
   const [params] = useSearchParams();
   console.log("id",params.get("v"));
-  return <><div className="m-5">
+  return <>
+  <div className="flex">
+    <div className="flex-row">
+  <div className="m-5">
             <iframe
             width="1000"
             height="500"
@@ -24,8 +27,11 @@ const WatchVideo = () => {
             allowFullScreen
           ></iframe>
    </div>
-   <Subscribe />
+   
    <Comment />
+   </div>
+   <Subscribe />
+   </div>
    
    </>;
 };
