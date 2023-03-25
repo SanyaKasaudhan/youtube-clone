@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import MaiContainer from "./components/MaiContainer";
 import WatchVideo from "./components/WatchVideo";
-import Comment from "./components/Comment";
 import Subscribe from "./components/Subscribe";
 const appRouter = createBrowserRouter([
   {

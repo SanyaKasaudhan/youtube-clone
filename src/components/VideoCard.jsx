@@ -18,9 +18,9 @@ const VideoCard = ({ info }) => {
 
 export const AdVideoCard = ({ info }) => {
   return (
-    <div className="border border-red-900 ">
+    <div className="border border-red-600 ">
       <VideoCard info={info} />
-      <div>AD</div>
+      <div className="pl-5 text-red-500 text-xl font-semibold">AD Facebook</div>
     </div>
   );
 };
