@@ -15,7 +15,7 @@ const CommentList = ({ info }) => {
           <div>{snippet.topLevelComment.snippet.textDisplay}</div>
           <div>{snippet.topLevelComment.snippet.publishedAt}</div>
           <div className="flex ml-5 mt-3">
-            <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/9513/9513802.png"  alt="dislike"/>
+            <img className="h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/9513/9513802.png"  alt="like"/>
             <img className="ml-5 h-5 w-5" src="https://cdn-icons-png.flaticon.com/128/880/880561.png"  alt="dislike"/>
             <div className="ml-5 text-lg">Reply</div>
           </div>

@@ -9,7 +9,7 @@ const SideNavbar = () => {
   return (
     <div className=" px-5 col-span-6 shadow-lg w-2/12 mt-1">
       <Link to="/">
-      <button className="flex pt-2 w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 px-3 rounded-lg">
+      <button className="flex pt-2 w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 px-3 rounded-lg">
         <img
           className="w-10 h-5"
           alt="icon"
@@ -18,7 +18,7 @@ const SideNavbar = () => {
         <div className="ml-4 text-lg mb-2 pb-2">Home</div>
       </button>
       </Link>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -26,7 +26,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Shorts</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -35,7 +35,7 @@ const SideNavbar = () => {
         <div className="ml-4 text-lg mb-2 pb-2">Subscription</div>
       </button>
       <div className="border bg-black font-extrabold w-11/12 mb-4"></div>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -43,7 +43,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Library</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -51,7 +51,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">History</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -59,7 +59,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Your_videos</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -67,7 +67,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Watch_later</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -78,7 +78,7 @@ const SideNavbar = () => {
 
       <div className="border bg-black font-extrabold w-11/12 mb-4"></div>
       <div className="mb-4 ml-4 font-semibold text-lg">Explore</div>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -86,7 +86,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Trending</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -94,7 +94,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Shopping</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -102,14 +102,14 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Music</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
           src="https://cdn-icons-png.flaticon.com/128/1179/1179120.png"
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Movies</div>
-      </button><button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      </button><button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -117,7 +117,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Gaming</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -125,7 +125,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">News</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
@@ -133,7 +133,7 @@ const SideNavbar = () => {
         ></img>
         <div className="ml-4 text-lg mb-2 pb-2">Sports</div>
       </button>
-      <button className="flex w-4/12 hover:bg-slate-200 hover:w-11/12 hover:h-10 hover:p-2 px-3 rounded-lg">
+      <button className="flex w-4/12 hover:bg-slate-200 hover:w-40 hover:h-10 hover:p-2 px-3 rounded-lg">
         <img
           className="h-5 w-5"
           alt="icon"
