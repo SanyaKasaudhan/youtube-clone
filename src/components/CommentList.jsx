@@ -11,7 +11,7 @@ const CommentList = ({ info }) => {
           alt="img"
         />
         <div className="mt-3">
-          <div className="text-xl">{snippet.topLevelComment.snippet.authorDisplayName}</div>
+          <div className="text-lg font-medium">{snippet.topLevelComment.snippet.authorDisplayName}</div>
           <div>{snippet.topLevelComment.snippet.textDisplay}</div>
           <div>{snippet.topLevelComment.snippet.publishedAt}</div>
           <div className="flex ml-5 mt-3">
