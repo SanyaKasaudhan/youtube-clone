@@ -27,13 +27,13 @@ export const Navbar = () => {
       </div>
       <div className="flex col-span-10 m-2 ml-60">
         <input
-          className="border-neutral-500 border-2 rounded-l-full pl-5 w-96"
+          className=" border-2 rounded-l-full pl-5 w-8/12"
           type="search"
           placeholder="Search"
         ></input>
         <img
           alt="search"
-          className="h-10 p-2 border-neutral-500 border-2 rounded-r-full"
+          className="h-10 p-2 border-2 rounded-r-full"
           src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
         ></img>
       </div>
