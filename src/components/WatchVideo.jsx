@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import { closeMenu } from "../utils/sidebarSlice";
 import Comment from "./Comment";
+import NestedComment from "./NestedComment";
 import Subscribe from "./Subscribe";
 
 const WatchVideo = () => {
@@ -79,6 +80,7 @@ const WatchVideo = () => {
   </div>
     
    </div>
+   <NestedComment />
    <Comment />
    </div>
    <Subscribe />
