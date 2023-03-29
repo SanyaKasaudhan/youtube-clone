@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSidebar } from "../utils/sidebarSlice";
-
+import { YOUTUBE_SEARCH_API } from "../utils/constants";
 export const Navbar = () => {
   const dispatch=useDispatch();
 
   const toggleMenuHandler= ()=>{
     dispatch(toggleSidebar());
+  }
+  const[searchQuery, setSearchQuery]= useState("");
+
+  useEffect(()=>{
+    console.log(searchQuery);
+    
+    //make an API call after every key press
+    // but if the difference between 2 key press i.e API CALL is <200ms
+    // decline the API call;
+
+    const timer = setTimeout(()=> getSuggestionList(), 2000)
+    return ()=>{
+      clearTimeout(timer);
+    }
+  },[searchQuery])
+
+  const getSuggestionList = async ()=>{
+    const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
+    const json = await data.json();
+    console.log(json[1])
   }
   return (
     <div className="grid grid-flow-col shadow-lg">
@@ -30,6 +50,7 @@ export const Navbar = () => {
           className=" border-2 rounded-l-full pl-5 w-8/12"
           type="search"
           placeholder="Search"
+          onChange={(e) => setSearchQuery(e.target.value)}
         ></input>
         <img
           alt="search"

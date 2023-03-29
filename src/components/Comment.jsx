@@ -14,7 +14,7 @@ const Comment = () => {
     const data = await fetch(YOUTUBE_COMMENT_API);
     const json = await data.json();
     setComment(json.items);
-    console.log(json.items)
+    // console.log(json.items)
   };
 
   return (

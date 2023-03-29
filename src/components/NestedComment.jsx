@@ -40,7 +40,7 @@ const commentsData = [
                       ],
                     },
                     {
-                      name: "Sanya Kasaudhan",
+                      name: "Abu Malik",
                       text: "I’ve never witnessed such awesome editing as this one.",
                       replies: [],
                     },
@@ -53,13 +53,13 @@ const commentsData = [
       ],
     },
     {
-      name: "Sanya Kasaudhan",
-      text: "Lorem ipsum dolor sit amet, consectetur adip",
+      name: "Alisha Khurana",
+      text: "Superb!!",
       replies: [],
     },
     {
-      name: "Sanya Kasaudhan",
-      text: "Lorem ipsum dolor sit amet, consectetur adip",
+      name: "Akanksha Gautam",
+      text: "Beyond the expectation.",
       replies: [],
     },
   ];
@@ -67,7 +67,7 @@ const commentsData = [
   const Comment = ({data}) =>{
     const { name, text, replies } = data;
     return (
-        <div className="flex">
+        <div className="flex shadow-sm bg-gray-100 rounded-lg my-2">
         <div className="flex">
           <img
             className="m-5 h-12 rounded-full"
@@ -100,7 +100,7 @@ const commentsData = [
   
 const NestedComment = () => {
   return (
-    <div className='ml-24'>
+    <div className='ml-16'>
         <CommentsList comments={commentsData} />
     </div>
   )
