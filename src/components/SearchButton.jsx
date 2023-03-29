@@ -5,7 +5,7 @@ const SearchButton = () => {
     // 'Stock market','Dance covers','Garba','Tourist destinations','Mountains','Beaches'
   ]
   return (
-    <div className='ml-2 relative'>
+    <div className='ml-2'>
         <div className=''>
         <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span className="icon-prev" aria-hidden="true"></span>

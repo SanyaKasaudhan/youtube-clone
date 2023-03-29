@@ -9,6 +9,7 @@ export const Navbar = () => {
     dispatch(toggleSidebar());
   }
   const[searchQuery, setSearchQuery]= useState("");
+  const[suggestions, setSuggestions] =useState([])
 
   useEffect(()=>{
     console.log(searchQuery);
@@ -17,7 +18,7 @@ export const Navbar = () => {
     // but if the difference between 2 key press i.e API CALL is <200ms
     // decline the API call;
 
-    const timer = setTimeout(()=> getSuggestionList(), 2000)
+    const timer = setTimeout(()=> getSuggestionList(), 200)
     return ()=>{
       clearTimeout(timer);
     }
@@ -27,6 +28,7 @@ export const Navbar = () => {
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
     console.log(json[1])
+    setSuggestions(json[1]);
   }
   return (
     <div className="grid grid-flow-col shadow-lg">
@@ -45,9 +47,10 @@ export const Navbar = () => {
         ></img>
         </a>
       </div>
-      <div className="flex col-span-10 m-2 ml-60">
+      <div>
+      <div className="flex col-span-10 m-2 ml-1">
         <input
-          className=" border-2 rounded-l-full pl-5 w-8/12"
+          className=" border-2 rounded-l-full pl-5 w-10/12"
           type="search"
           placeholder="Search"
           onChange={(e) => setSearchQuery(e.target.value)}
@@ -57,7 +60,18 @@ export const Navbar = () => {
           className="h-10 p-2 border-2 rounded-r-full"
           src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
         ></img>
+        
       </div>
+      <div className="fixed bg-white py-2 px-2 w-[30rem] shadow-lg rounded-lg border border-gray-100">
+            <ul>
+              {suggestions.map((s) => (
+                <li key={s} className="py-2 px-3 shadow-sm hover:bg-gray-100">
+                  🔍 {s}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       <div className="grid grid-flow-col col-span-1">
         <img
           className="h-9 mt-2"
