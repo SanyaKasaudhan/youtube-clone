@@ -10,10 +10,9 @@ export const Navbar = () => {
   }
   const[searchQuery, setSearchQuery]= useState("");
   const[suggestions, setSuggestions] =useState([])
-
+  const[showSuggestion, setShowSuggestion]=useState(false);
   useEffect(()=>{
-    console.log(searchQuery);
-    
+    // console.log(searchQuery);    
     //make an API call after every key press
     // but if the difference between 2 key press i.e API CALL is <200ms
     // decline the API call;
@@ -54,6 +53,8 @@ export const Navbar = () => {
           type="search"
           placeholder="Search"
           onChange={(e) => setSearchQuery(e.target.value)}
+          onFocus={()=>setShowSuggestion(true)}
+          onBlur={()=> setShowSuggestion(false)}
         ></input>
         <img
           alt="search"
@@ -62,6 +63,7 @@ export const Navbar = () => {
         ></img>
         
       </div>
+      {showSuggestion && (
       <div className="fixed bg-white py-2 px-2 w-[30rem] shadow-lg rounded-lg border border-gray-100">
             <ul>
               {suggestions.map((s) => (
@@ -71,6 +73,7 @@ export const Navbar = () => {
               ))}
             </ul>
           </div>
+          )}
         </div>
       <div className="grid grid-flow-col col-span-1">
         <img
