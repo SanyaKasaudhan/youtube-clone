@@ -1,23 +1,29 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleSidebar } from "../utils/sidebarSlice";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
+import { cacheResults } from "../utils/searchSlice";
+
 export const Navbar = () => {
   const dispatch=useDispatch();
 
   const toggleMenuHandler= ()=>{
     dispatch(toggleSidebar());
   }
-  const[searchQuery, setSearchQuery]= useState("");
+  const[searchQuery, setSearchQuery]= useState ("");
   const[suggestions, setSuggestions] =useState([])
   const[showSuggestion, setShowSuggestion]=useState(false);
-  useEffect(()=>{
-    // console.log(searchQuery);    
-    //make an API call after every key press
-    // but if the difference between 2 key press i.e API CALL is <200ms
-    // decline the API call;
 
-    const timer = setTimeout(()=> getSuggestionList(), 200)
+  const searchCache = useSelector((store) =>store.search);
+  useEffect(()=>{
+      const timer = setTimeout(()=> {
+      if(searchCache[searchQuery]){
+        setSuggestions(searchCache[searchQuery])
+      }
+      else{
+      getSuggestionList()     
+      }
+    }, 200)
     return ()=>{
       clearTimeout(timer);
     }
@@ -26,8 +32,14 @@ export const Navbar = () => {
   const getSuggestionList = async ()=>{
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
-    console.log(json[1])
+    // console.log(json[1])
     setSuggestions(json[1]);
+
+    console.log("API",searchQuery);
+    dispatch(cacheResults({
+      [searchQuery]:json[1]
+    }))
+
   }
   return (
     <div className="grid grid-flow-col shadow-lg">
