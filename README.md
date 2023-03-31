@@ -77,3 +77,18 @@ Cache:
 {i:       Time complexity in Object(map, hashmap) = o(1)
   ip:
   iph:}
+
+  const searchCache = useSelector((store) =>store.search);
+  useEffect(()=>{
+      const timer = setTimeout(()=> {
+      if(searchCache[searchQuery]){
+        setSuggestions(searchCache[searchQuery])
+      }
+      else{
+      getSuggestionList()     
+      }
+    }, 200)
+    return ()=>{
+      clearTimeout(timer);
+    }
+  },[searchQuery])
