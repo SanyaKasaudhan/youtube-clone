@@ -9,7 +9,7 @@ const VideoCard = ({ info }) => {
       <img className="rounded-lg" alt="thumbnail" src={thumbnails.medium.url} />
       <ul>
         <li className="font-bold py-2">{title.split(' ').slice(0,10).join(" ")}</li>
-        <li>{channelTitle}</li>
+        <li className="font-semibold">{channelTitle}</li>
         <li>{statistics.viewCount} views</li>
       </ul>
     </div>

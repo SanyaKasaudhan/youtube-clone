@@ -87,7 +87,7 @@ export const Navbar = () => {
           </div>
           )}
         </div>
-      <div className="grid grid-flow-col col-span-1">
+      <div className="float-right grid grid-flow-col col-span-1">
         <img
           className="h-9 mt-2"
           src="https://cdn-icons-png.flaticon.com/128/4189/4189286.png"
