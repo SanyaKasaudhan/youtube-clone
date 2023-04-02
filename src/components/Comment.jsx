@@ -20,8 +20,8 @@ const Comment = () => {
   return (
     <div className='flex flex-col'>
         {
-            comment.map((comment)=>
-            (<CommentList key={comment.id} info={comment}/>)
+            comment.map((comment,index)=>
+            (<CommentList key={index} info={comment}/>)
             )
         }
     </div>
