@@ -1,4 +1,4 @@
-import { YOUTUBE_PLAYLIST_API, YOUTUBE_VIDEOS_API } from "./constants";
+import { YOUTUBE_PLAYLIST_API } from "./constants";
 import { useState, useEffect } from "react";
 
 const usePlayList = () => {
