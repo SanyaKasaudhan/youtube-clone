@@ -5,6 +5,7 @@ import { closeMenu } from "../utils/sidebarSlice";
 import Comment from "./Comment";
 import NestedComment from "./NestedComment";
 import Subscribe from "./Subscribe";
+import LiveChat from "./LiveChat";
 
 const WatchVideo = () => {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ const WatchVideo = () => {
         <div className="flex-row">
           <div className="m-5">
             <iframe
-              width="1100"
+              width="1000"
               height="500"
               src={"https://www.youtube.com/embed/" + params.get("v")}
               title="YouTube video player"
@@ -98,7 +99,14 @@ const WatchVideo = () => {
           <NestedComment />
           <Comment />
         </div>
+        <div>
+        <div>          
+        <LiveChat />
+        </div>
+        <div>
         <Subscribe />
+        </div>
+        </div>
       </div>
     </>
   );
