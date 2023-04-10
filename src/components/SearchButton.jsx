@@ -2,7 +2,7 @@ import React from 'react'
 
 const SearchButton = () => {
     const searchText=['All','Javascript','Music','Comedy','Stock markets','Live','History','Computer Science','News','Weddings','React','Indian cuisine','Garba',
-     'Stock market','Dance covers','Tourist destinations','Mountains','Beaches'
+    //  'Stock market','Dance covers','Tourist destinations','Mountains','Beaches'
   ]
   return (
     <div className='ml-2'>

@@ -9,10 +9,16 @@ import {
 import MaiContainer from "./components/MaiContainer";
 import WatchVideo from "./components/WatchVideo";
 import Subscribe from "./components/Subscribe";
+import HomeShimmer from "./components/HomeShimmer";
+import { Suspense } from "react";
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Body />,
+    element: (
+      <Suspense fallback={<HomeShimmer />}>
+        <Body />
+      </Suspense>
+    ),
     
     children: [
       {
