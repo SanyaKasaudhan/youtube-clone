@@ -11,6 +11,7 @@ import WatchVideo from "./components/WatchVideo";
 import Subscribe from "./components/Subscribe";
 import HomeShimmer from "./components/HomeShimmer";
 import { Suspense } from "react";
+import Car from "./components/Car";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +43,7 @@ function App() {
     <div>
       <Provider store={store}>
       <Navbar />
+      <Car />
       <RouterProvider router={appRouter} />
 
       </Provider>
