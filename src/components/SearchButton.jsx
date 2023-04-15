@@ -7,14 +7,14 @@ const SearchButton = () => {
   return (
     <div className='ml-2'>
         <div className=''>
-        <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        {/* <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span className="icon-prev" aria-hidden="true"></span>
       <span className="sr-only">Previous button</span>
     </a>
     <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span className="icon-next" aria-hidden="true"></span>
       <span className="sr-only">Next</span>
-    </a>
+    </a> */}
            { searchText.map((e,i)=>{
                 return <button key={i} className='bg-gray-300 p-3 m-2 rounded-lg'>{e}</button>
             })
