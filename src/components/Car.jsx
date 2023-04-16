@@ -34,12 +34,12 @@ function Car() {
   ];
 
   return (
-    <div className="relative bg-yellow-600">
+    <div className="relative bg-yellow-300">
       <div className="mx-auto  max-w-screen-xl px-6">
         <Slider {...settings}>
           {searchText.map((item) => (
             <div className=""  key={item}>
-              <button className="bg-yellow-300 px-5 my-2 rounded-md ">{item}</button>
+              <button className="bg-yellow-100 px-5 my-2 rounded-md flex items-center justify-center h-10">{item}</button>
             </div>
           ))}
         </Slider>
@@ -55,14 +55,11 @@ function Car() {
           .slick-prev,
           .slick-next {
             position: absolute;
-            z-index: 1;
             top: 50%;
-            transform: translateY(-50%);
             width: 30px;
             height: 30px;
-            border-radius: 50%;
+            border-radius: 80%;
             background-color: white;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
           }
           .slick-prev {
             left: -40px;
