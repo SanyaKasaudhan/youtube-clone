@@ -1,10 +1,10 @@
 # youtube-clone
  Website with real API.
 
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init
-npm i @reduxjs/toolkit react-redux
-npm i react-router-dom
+     npm install -D tailwindcss postcss autoprefixer
+     npx tailwindcss init
+     npm i @reduxjs/toolkit react-redux
+     npm i react-router-dom
 
 # DEBOUNCING
  typing slow = (difference between key strokes) = 200ms
